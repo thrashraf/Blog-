@@ -1,0 +1,30 @@
+<%- include('partial/header')  %> 
+
+
+
+<h1>HOME</h1>
+
+<p><%= content1 %></p>
+
+<div>
+<a href='/compose'> 
+<button class="btn btn-primary" >Upload<Upload</button>
+</div>
+</a>
+
+
+
+<% posts.forEach(function(post){ %>
+
+  <h1><%= post.title %></h1><br>
+<p><%= post.content.substring(0, 100)%> <a href='posts/<%= post._id %>' +  >Read More</a>  </p>    
+<%  console.log(post.title)%>
+<% }) %>
+
+
+
+
+  
+
+
+<%- include('partial/footer')  %> 
